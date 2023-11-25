@@ -8,7 +8,7 @@
 body {
     font-family: 'Cabin', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-image: url(../VINOTECA/distorted-sun@3000x2000px.jpg);
+    background-image: url(../IMAGENES/distorted-sun@3000x2000px.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -51,7 +51,7 @@ img, video, iframe {
 }
 
 .footer{
-    height: 250px;
+    height: 16rem;
     display: flex; /*obligatorio cuando queremos usar Flexbox, esto va en el padre directo para mover a los hijos*/
     flex-direction: column; /*aplica el eje principal*/
     justify-content: space-evenly; /*controla el eje principal horizontal dependiendo de flex direction*/
@@ -61,7 +61,7 @@ img, video, iframe {
 
 .footer img{
     border-radius: 20px;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -115,7 +115,6 @@ main{
 
 .section1__item{
    list-style-type:none;
-   background-color: blueviolet;
    border-radius: 5px;
 }
 
@@ -143,7 +142,6 @@ main{
     text-decoration: solid;
 }
 
-
 .section1__enlace:hover{
     background-color: rgb(211, 9, 144);
     transition: ease-out;
@@ -151,8 +149,17 @@ main{
 
 /*Medias querys // Se recomiendan cargarse al final del archivo de estilos*/
 
-@media (min-width: 760px) {
-    body{
-        background-color: antiquewhite;
+@media (max-width: 768px) {
+    .header__titulo{
+        font-size: 250%;
+    }
+
+    .section1__enlace{
+        width: 85%;
+    }
+
+    .footer{
+        width: 75%;
     }
 }
+

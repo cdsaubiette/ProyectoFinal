@@ -8,7 +8,7 @@
 body {
     font-family: 'Cabin', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-image: url(../VINOTECA/distorted-sun@3000x2000px.jpg);
+    background-image: url(../IMAGENES/distorted-sun@3000x2000px.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -93,14 +93,13 @@ img, video, iframe {
     border-radius: 50%;
 }
 
-
-
 .header__titulo{
     text-align: center;
-    font-size: 50px;
+    font-size: 350%;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing:3px;
+    color: black;
 }
 
 .header__descripcion{
@@ -114,8 +113,9 @@ main{
 
 .section1__item{
    list-style-type:none;
-   background-color: blueviolet;
+   
    border-radius: 5px;
+   width: 400%;
 }
 
 .section1__lista{
@@ -126,21 +126,21 @@ main{
 
     
 }
+
 .section1__enlace{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
     transition: ease-in;
-    transition-duration: 0.3s;
-    transition-delay: .2s;
+    transition-duration: 0.4s;
+    transition-delay: .3s;
     border-radius: 5PX;
     background-color:antiquewhite;
-    width: 500PX;
+    width: 100%;
     text-transform: uppercase;
     text-decoration: solid;
 }
-
 
 .section1__enlace:hover{
     background-color: rgb(211, 9, 144);
@@ -158,33 +158,84 @@ main{
     padding: 1rem;
 }
 
+.section3 h2{
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 5PX;
+    background-color:antiquewhite;
+    text-transform: uppercase;
+    text-decoration: solid;
+    margin: 2rem;
+}
+
+.carousel-ofertas{
+    max-width: 350px;
+    left: 15%;
+ 
+}
+.carousel-inner {
+    position: relative;
+    left: 14%;
+    width: 70%;
+    border-radius: 20px;
+    
+}
+
+.carousel-ofertas{
+    max-width: 350px;
+    left: 12%;
+}
+.carousel-inner {
+    position: relative;
+    left: 14%;
+    width: 70%;
+    border-radius: 20px;
+    
+}
+
 .section3__item{
     margin-left: 20px;
     
     
 }
+
 .section3__item img{
     border-radius: 20px;
 }
 
 .section3__lista{
     padding-top: 10px;
+    padding-left: 0;
     list-style-type: none;
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
 
 }
-.carousel-inner {
-    position: relative;
-    width: 100%;
-    height: 40rem;
-    border-radius: 20px;
-    
-}
 
 .section4__video{
-    border-radius: 1rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
     width: 40%;
 }
 
+/*Medias querys // Se recomiendan cargarse al final del archivo de estilos*/
+
+@media (max-width: 768px) {
+    .header__titulo{
+        font-size: 250%;
+    }
+
+    .section1__enlace{
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2__mapa{
+        width: 75%;
+    }
+}

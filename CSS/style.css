@@ -151,8 +151,7 @@ main{
 .section3 h2{
     justify-content: center;
     color: black;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 1.5rem;
     border-radius: 5PX;
     background-color:antiquewhite;
     text-transform: uppercase;
